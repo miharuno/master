@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Illustou Amtou</title>
+  </head>
+  <body>
+    <header id="nav">
+      <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand px-5" href="#">
+            <img class="navcon" src="images/navcon.png" alt="...">
+            Illustou Amtou
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end pe-5" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#profile">Profile</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#work" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Works
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="#sousaku">創作イラスト</a></li>
+                  <li><a class="dropdown-item" href="#hanken">版権イラスト</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#request">Requests</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+<!-- スライド -->
+        <section id="slide">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner pb-5 mb-5">
+                  <div class="carousel-item active">
+                    <img src="images/meido.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/miku.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/sweet.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+
+<!-- プロフィール -->
+        <section id="profile">
+          <p class="text-center text-decoration-underline pt-5 fs-1 fw-bold">Profile</p>
+          <div class="text-center pt-3">
+            <img src="images/me.jpg" class="rounded-circle" alt="...">
+            <p class="text-center pt-3 fs-3 fw-bold">まる</p>
+            <p class="text-center pb-5">趣味でイラストを描き始め、後々SNSにアップし出すようになる。<br>リアルよりのイラストを主に描き、最近では厚塗りに加えてシンプルな塗りも練習中…。<br>顔を描き込むのが大好きです。</p>
+          </div>
+        </section>
+
+<!-- 作品・創作 -->
+        <section id="work">
+          <p class="text-center text-decoration-underline pt-5 fs-1 fw-bold">Works</p>
+          <div id="sousaku">
+          <p class="text-center pt-3 fs-3 fw-bold">- 創作イラスト -</p>
+          <div class="container mb-2">
+            <div class="row">
+              <div class="col align-self-start">
+                <img src="images/sena.jpg" class="img-thumbnail" alt="...">
+              </div>
+              <div class="col align-self-center">
+                <img src="images/panda.jpg" class="img-thumbnail" alt="...">
+              </div>
+              <div class="col align-self-end">
+                <img src="images/choco.jpg" class="img-thumbnail" alt="...">
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <div class="container mb-3">
+            <div class="row">
+              <div class="col align-self-start">
+                <button type="button" class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#sena">
+                  作品詳細
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="sena" tabindex="-1" aria-labelledby="sena" aria-hidden="true">
+                  <div class="modal-dialog  modal-lg ">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="sena">ハロウィーンイラスト</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <figure class="figure">
+                          <img src="images/allsena.jpg" class="figure-img img-fluid rounded" alt="...">
+                          <figcaption class="figure-caption text-end">2020/10/31 ibisPaint</figcaption>
+                        </figure>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col align-self-center">
+                <button type="button" class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#panda">
+                  作品詳細
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="panda" tabindex="-1" aria-labelledby="panda" aria-hidden="true">
+                  <div class="modal-dialog  modal-lg ">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="panda">パンダっ娘</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <figure class="figure">
+                          <img src="images/allpanda.jpg" class="figure-img img-fluid rounded" alt="...">
+                          <figcaption class="figure-caption text-end">2021/02/02 ibisPaint</figcaption>
+                        </figure>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col align-self-end">
+                <button type="button" class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#choco">
+                  作品詳細
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="choco" tabindex="-1" aria-labelledby="choco" aria-hidden="true">
+                  <div class="modal-dialog  modal-lg ">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="choco">バレンタインイラスト</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <figure class="figure">
+                          <img src="images/allchoco.jpg" class="figure-img img-fluid rounded" alt="...">
+                          <figcaption class="figure-caption text-end">2021/02/15 ibisPaint</figcaption>
+                        </figure>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<!-- 2列目 -->
+          <div class="container mb-2">
+            <div class="row">
+              <div class="col align-self-start">
+                <img src="images/candy.jpg" class="img-thumbnail" alt="...">
+              </div>
+              <div class="col align-self-center">
+                <img src="images/yuka.jpg" class="img-thumbnail" alt="...">
+              </div>
+              <div class="col align-self-end">
+                <img src="images/boy.jpg" class="img-thumbnail" alt="...">
+              </div>
+            </div>
+          </div>
+          <div class="container mb-3">
+            <div class="row">
+              <div class="col align-self-start">
+                <button type="button" class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#candy">
+                  作品詳細
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="candy" tabindex="-1" aria-labelledby="candy" aria-hidden="true">
+                  <div class="modal-dialog  modal-lg ">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="candy">Are you an angle or a devil?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <figure class="figure">
+                          <img src="images/allcandy.jpg" class="figure-img img-fluid rounded" alt="...">
+                          <figcaption class="figure-caption text-end">2021/12/04 ibisPaint</figcaption>
+                        </figure>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col align-self-center">
+                <button type="button" class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#yuka">
+                  作品詳細
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="yuka" tabindex="-1" aria-labelledby="yuka" aria-hidden="true">
+                  <div class="modal-dialog  modal-lg ">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="yuka">パンダが好きな女の子</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <figure class="figure">
+                          <img src="images/allyuka.jpg" class="figure-img img-fluid rounded" alt="...">
+                          <figcaption class="figure-caption text-end">2021/01/31 ibisPaint</figcaption>
+                        </figure>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col align-self-end">
+                <button type="button" class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#boy">
+                  作品詳細
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="boy" tabindex="-1" aria-labelledby="boy" aria-hidden="true">
+                  <div class="modal-dialog  modal-lg ">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="boy">笑ってる君が好き。</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <figure class="figure">
+                          <img src="images/allboy.jpg" class="figure-img img-fluid rounded" alt="...">
+                          <figcaption class="figure-caption text-end">2022/09/02 ibisPaint</figcaption>
+                        </figure>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+<!-- 作品・版権 -->
+<section id="work">
+  <div id="hanken">
+  <p class="text-center pt-5 fs-3 fw-bold">- 版権イラスト -</p>
+  <div class="container mb-2">
+    <div class="row">
+      <div class="col align-self-start">
+        <img src="images/toge.jpg" class="img-thumbnail" alt="...">
+      </div>
+      <div class="col align-self-center">
+        <img src="images/ziro.jpg" class="img-thumbnail" alt="...">
+      </div>
+      <div class="col align-self-end">
+        <img src="images/hks.jpg" class="img-thumbnail" alt="...">
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="container mb-3">
+    <div class="row">
+      <div class="col align-self-start">
+        <button type="button" class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#toge">
+          作品詳細
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="toge" tabindex="-1" aria-labelledby="toge" aria-hidden="true">
+          <div class="modal-dialog  modal-lg ">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="toge">呪術廻戦 狗巻棘</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <figure class="figure">
+                  <img src="images/alltoge.jpg" class="figure-img img-fluid rounded" alt="...">
+                  <figcaption class="figure-caption text-end">2021/01/23 ibisPaint</figcaption>
+                </figure>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col align-self-center">
+        <button type="button" class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#ziro">
+          作品詳細
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="ziro" tabindex="-1" aria-labelledby="ziro" aria-hidden="true">
+          <div class="modal-dialog  modal-lg ">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="ziro">僕のヒーローアカデミア 耳朗響香</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <figure class="figure">
+                  <img src="images/allziro.jpg" class="figure-img img-fluid rounded" alt="...">
+                  <figcaption class="figure-caption text-end">2021/09/01 ibisPaint</figcaption>
+                </figure>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col align-self-end">
+        <button type="button" class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#hks">
+          作品詳細
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="hks" tabindex="-1" aria-labelledby="hks" aria-hidden="true">
+          <div class="modal-dialog  modal-lg ">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="hks">僕のヒーローアカデミア ホークス</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <figure class="figure">
+                  <img src="images/allhks.jpg" class="figure-img img-fluid rounded" alt="...">
+                  <figcaption class="figure-caption text-end">2021/09/28 ペン画</figcaption>
+                </figure>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- 2列目 -->
+<div class="container mb-2">
+<div class="row justify-content-center">
+<div class="col-4">
+<img src="images/roki.jpg" class="img-thumbnail" alt="...">
+</div>
+<div class="col-4">
+<img src="images/hero.jpg" class="img-thumbnail" alt="...">
+</div>
+</div>
+</div>
+
+<div class="container mb-3">
+<div class="row justify-content-center">
+<div class="col-4">
+<button type="button" class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#roki">
+作品詳細
+</button>
+<!-- Modal -->
+<div class="modal fade" id="roki" tabindex="-1" aria-labelledby="roki" aria-hidden="true">
+<div class="modal-dialog  modal-lg ">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="roki">僕のヒーローアカデミア 轟焦凍</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <figure class="figure">
+        <img src="images/allroki.jpg" class="figure-img img-fluid rounded" alt="...">
+        <figcaption class="figure-caption text-end">2021/09/28 ペン画</figcaption>
+      </figure>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="col-4 pb-5">
+<button type="button" class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#hero">
+作品詳細
+</button>
+<!-- Modal -->
+<div class="modal fade" id="hero" tabindex="-1" aria-labelledby="hero" aria-hidden="true">
+<div class="modal-dialog  modal-lg ">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="hero">パンダヒーロー/ハチ</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <figure class="figure">
+        <img src="images/allhero.jpg" class="figure-img img-fluid rounded" alt="...">
+        <figcaption class="figure-caption text-end">2022/01/26 ibisPaint</figcaption>
+      </figure>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</section>
+
+<section id="request">
+  <p class="text-center text-decoration-underline pt-5 fs-1 fw-bold">About Requests</p>
+  <p class="text-center pt-1 fs-4">依頼についてご参考程度にご覧ください。</p>
+  <p class="text-center">アイコン用イラストを中心に依頼を受け付けています！</p>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 ms-5 me-5">
+    <div class="col">
+        <div class="card">
+            <img src="images/atsu.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text fw-bold">アイコンイラスト（厚塗り）</p>
+              <p class="card-text">￥3000</p>
+            </div>
+          </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <img src="images/simple.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text fw-bold">アイコンイラスト（シンプル）</p>
+              <p class="card-text ">￥1500</p>
+            </div>
+          </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <img src="images/nail.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text fw-bold">サムネイルイラスト</p>
+              <p class="card-text">￥5000（シンプル塗りの場合半額）</p>
+            </div>
+          </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <img src="images/rog.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text fw-bold">アナログイラスト</p>
+              <p class="card-text">￥2000</p>
+            </div>
+          </div>
+    </div>  
+  </div>
+  <p class="text-center pt-5 fw-bold fs-4 text-danger">！注意事項！</p>
+  <p class="text-center">※上記金額はあくまで目安です。ご相談後、多少変更する場合がございます。</p>
+  <p class="text-center pb-5">※イラストを見てもらうとお分かりの通り、塗り方がバラバラな部分がございます。<br>このイラストのような塗り方がいいなどのご要望がありましたら、仰ってくださると対応致します。</p>
+</section>
+
+<section id="contact">
+  <p class="text-center text-decoration-underline pt-5 fs-1 fw-bold">Contact</p>
+  <p class="text-center">ご依頼の際は、TwitterのDMにてご連絡ください。<br>時間帯によっては返信が遅い場合がありますがご了承ください。</p>
+  <p class="text-center text-decoration-underline pb-5">Twitterアカウント：＠○○○○○○○○○</p>
+
+</section>
+
+<section id="top">
+  <a href="#nav"><img src="images/top.png" class="rounded mx-auto d-block pb-5" alt=""></a>
+</section>
+
+    </main>
+
+    <footer>
+      <div class="container-fluid bg-light text-dark p-5 text-center">
+        <p>-最後までご覧いただきありがとうございました🌟-</p>
+    </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
